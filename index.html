@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/spotify-seeklogo.com.svg">
+</head>
+<body>
+    <header>
+        <img src="./imagens/spotify-seeklogo.com.svg" alt="Logo_Spotify">
+    </header>
+    <section>
+        <div class="maxwidth maxwidth_section">
+            <div id="poster">
+                <audio volume id="audio" src="./music/Justin Bieber - Hold On (Lyric Video).mp3"></audio>
+                <img src="./imagens/posterHoldOn.jpg" alt="posterHoldOn">
+            </div>
+            <div class="title">
+                <h1 id="music_name">Hold On</h1>
+                <h2 id="artist_name">Justin Bieber</h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="controls">
+            <img id="back" onclick="back()" src="./imagens/icons/skip_previous.svg" alt="Voltar">
+            <img id="play" onclick="playAndPause()" src="./imagens/icons/play.svg" alt="play">
+            <img id="next" onclick="next()" src="./imagens/icons/skip_next.svg" alt="Next">
+            <div id="progress">
+                <div id="myBar">
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="controls" id="vol">
+            <img id="vol_img" src="./imagens/icons/volume_up.svg" alt="volume_up">
+            <div class="controls">
+                <div id="volume">
+                    <div id="myBarVol">
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <img src="./imagens/icons/play.svg" alt="">
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
